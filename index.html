@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main>
+        <header>
+            <h1 id="title">免費程式碼營 問卷調查</h1>
+            <p id="description">謝謝您撥空協助我們改進此平台</p>
+        </header>
+        <form action="#!" method="POST" id="survey-form">
+            <fieldset>
+                <legend>基本資料：</legend>
+                <label id="name-label" for="name">姓名：</label>
+                <input type="text" id="name" name="name" placeholder="請輸入您的名字..." required>
+                <label id="email-label" for="email">電子信箱：</label>
+                <input type="email" id="email" name="email" placeholder="請輸入您的電子信箱..." required>
+                <label id="number-label" for="number">年齡：<span>（選擇性填寫）</span></label>
+                <input type="number" name="age" id="number" min="8" max="100" placeholder="請輸入您的年齡...">
+            </fieldset>
+            <fieldset>
+                <legend>以下哪一項最適合描述您現在的角色？</legend>
+                <select name="role" id="dropdown" required>
+                    <option value="none" disabled selected>請選擇您現在的角色...</option>
+                    <option value="student">學生</option>
+                    <option value="full-time">全職</option>
+                    <option value="part-time">兼職</option>
+                    <option value="jobless">待業</option>
+                    <option value="other">其它</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>您最喜歡免費程式碼營的哪一項功能？</legend>
+                <select name="feature" id="favorite" required>
+                    <option value="none" disabled selected>請選擇您最愛的功能...</option>
+                    <option value="challenges">挑戰</option>
+                    <option value="projects">專案</option>
+                    <option value="community">社群</option>
+                    <option value="openSource">開源</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>您會推薦免費程式碼營給朋友嗎？</legend>
+                <label>
+                    <input type="radio" name="recommend" value="definitly" checked> 一定會
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="maybe"> 可能會 
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="not-sure"> 不確定
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>您希望我們在哪些地方做改進？<span>（可複選）</span></legend>
+                <label>
+                    <input type="checkbox" name="improved" value="front-end-projects"> 前端專案
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="back-end-projects"> 後端專案 
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="data-visualization"> 數據視覺化
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="challenges"> 挑戰
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="open-source-community"> 開源社群
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="gitter-help-rooms"> 給的互助討論室
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="videos"> 影音
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="city-meetups"> 市區聚會
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="wiki"> 維基百科
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="forum"> 討論區
+                </label>
+                <label>
+                    <input type="checkbox" name="improved" value="additional-courses"> 額外的課程
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>請留下任何您的建議與回饋...</legend>
+                <textarea name="comments" id="comments" cols="100" rows="20" placeholder="任何留言..."></textarea>
+            </fieldset>
+            <button type="submit" id="submit">提交</button>
+            <button type="reset" id="clear">清空</button>
+        </form>
+    </main>
+</body>
+</html>

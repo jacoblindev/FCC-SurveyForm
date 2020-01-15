@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+main {
+    margin: 1em auto;
+    width: 800px;
+}
