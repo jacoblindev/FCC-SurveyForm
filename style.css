@@ -49,10 +49,46 @@ legend {
     letter-spacing: 0.1em;
 }
 
-/*  CHECKED STYLES  */
-input[type="checkbox"]:checked + label.checkboxed,
-input[type="radio"]:checked + label.checkboxed {
+i {
     color: red;
+}
+
+/*  CHECKED STYLES  */
+input[type="radio"],
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+label.radioboxed {
+    margin-bottom: 10px;
+    display: inline-block;;
+    padding-left: 26px;
+    background: url('img/checked-fire.png') no-repeat;
+    background-position: 0 -92px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+label.checkboxed {
+    margin-bottom: 10px;
+    display: inline-block;;
+    padding-left: 26px;
+    background: url('img/checked-fire.png') no-repeat;
+    background-position: 0 -32px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label.radioboxed {
+    color: red;
+    background-position: 0 -62px;
+}
+
+input[type="checkbox"]:checked + label.checkboxed {
+    color: red;
+    background-position: 0 -2px;
 }
 
 /*  INPUTFIELD STYLES  */
@@ -92,26 +128,37 @@ select{
 
 /*  BUTTON STYLES  */
 button[type="submit"]{
-    background: #b61111;
+    background: #750505;
     padding: 15px;
     color: #fff;
     font-size: 1.2rem;
     letter-spacing: .1em;
     border-radius: 5px;
-    border: 2px solid #b61111;
-    box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.3);
+    border: 2px solid #750505;
+    box-shadow: 1px 3px 5px rgba(253, 101, 101, 0.3);
     width: 65%;
 }
 
 button[type="reset"]{
     background: transparent;
-    border: 2px solid #b61111;
+    border: 2px solid #750505;
     padding: 15px;
     color: #fff;
     font-size: 1.2rem;
     letter-spacing: .1em;
     border-radius: 5px;
-    box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 3px 5px rgba(253, 101, 101, 0.3);
     width: 30%;
     float: right;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #ec3a0d;
+    border: 2px solid #ec3a0d;
+}
+
+button[type="reset"]:hover {
+    cursor: pointer;
+    border: 2px solid #ec3a0d;
 }
