@@ -53,6 +53,10 @@ i {
     color: red;
 }
 
+#info label {
+    padding-left: 2px;
+}
+
 /*  CHECKED STYLES  */
 input[type="radio"],
 input[type="checkbox"] {
@@ -161,4 +165,26 @@ button[type="submit"]:hover {
 button[type="reset"]:hover {
     cursor: pointer;
     border: 2px solid #ec3a0d;
+}
+
+@media(max-width: 800px) {
+    main {
+        margin: 1em auto;
+        width: 100%;
+    } 
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    button[type="submit"],
+    button[type="reset"] {
+        width: 100%;
+        margin: 10px 0;
+        float: none;
+    }
 }
