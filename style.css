@@ -167,6 +167,19 @@ button[type="reset"]:hover {
     border: 2px solid #ec3a0d;
 }
 
+/* Footer style */
+footer {
+    background-color: black;
+    color: #e2e2e2;
+    width: 100vw;
+}
+
+footer h6 {
+    line-height: 8vh;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 @media(max-width: 800px) {
     main {
         margin: 1em auto;
